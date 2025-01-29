@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "star_wars_ep4"
+version = "1.0.0"
+dependencies = [
+    "colorama"
+]
+[project.scripts]
+starwars = "starwars.starwars:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/starwars"]
